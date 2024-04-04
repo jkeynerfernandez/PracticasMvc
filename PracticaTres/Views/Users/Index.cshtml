@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAMES</th>
+            <th>LAST NAME</th>
+            <th>EMAIL</th>
+
+
+        </tr>
+
+    </thead>
+
+    @foreach (var user in Model){
+
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Names</td>
+            <td>@user.LastNames</td>
+            <td>@user.Email</td>
+
+
+        </tr>
+        
+
+
+    }
+
+
+
+
+</table>

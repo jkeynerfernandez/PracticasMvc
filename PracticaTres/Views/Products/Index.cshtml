@@ -1,0 +1,41 @@
+<table>
+    <thead>
+        <tr>
+
+
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>ACTION</th>
+            
+
+
+        </tr>
+
+    </thead>
+
+    @foreach (var product in Model){
+        
+
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+            <td>
+                <a asp-area="" asp-controller="Products" asp-action="Details" asp-route-id="@product.Id">Details</a>
+                
+
+            </td>
+            
+
+
+        </tr>
+        
+
+
+    }
+
+
+
+
+</table>
