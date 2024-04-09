@@ -1,0 +1,37 @@
+@model User
+@{
+  ViewData["Title"] = "Create" ; 
+
+}
+
+<form asp-action="Create" method="get">
+    <div class="mb-3">
+        <label for="">Names</label>
+        <input asp-for="Names" required> 
+    </div>
+    <div class="mb-3">
+        <label for="">LastNames</label>
+        <input asp-for="LastNames" required> 
+    </div>
+    <div class="mb-3">
+        <label for="">Email</label>
+        <input asp-for="Email" required> 
+    </div>
+    <div class="mb-3">
+        <label for="">BirthDate</label>
+        <input asp-for="BirthDate" required> 
+    </div>
+    <div class="mb-3">
+        <label for="">Address</label>
+        <input asp-for="Address" required> 
+    </div>
+    <div class="mb-3">
+        <label for="">Phone</label>
+        <input asp-for="Phone" required> 
+    </div>
+
+
+    <button>Send</button>
+
+    
+</form>

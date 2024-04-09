@@ -1,0 +1,33 @@
+
+@model Sector
+
+
+<form asp-action="EditSector" asp-controller="Sectors" asp-route-id="@Model.Id" method="post">
+
+    <div>
+        
+        <input  asp-for="Id" name="Id" hidden>
+    </div>
+
+    <div>
+        <label for="Name">Name</label>
+        <input  asp-for="Name" name="Name">
+    </div>
+
+   
+    <div>
+        <label for="Description">Description</label>
+        <input  asp-for="Description" name="Description">
+    </div>
+
+
+    <div>
+        <label for="Author">Author</label>
+        <input  asp-for="Author" name="Author">
+    </div>
+
+    <button type="submit">update</button>
+
+</form>
+
+

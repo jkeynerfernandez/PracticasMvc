@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form method="post" enctype="multipart/form-data" style="margin: 0 auto;">
+    <div class="form-grup">
+    <label for="ejemplo">Elegir archivo</label>
+    <input type="file" class="form-contrl-file" name="imagen" id="ejemplo">
+    <label for="ejemplo"> Carpeta </label>
+    <select name="ubicacion" id="">
+        <option value="1">Imagenes</option>
+        <option value="2">Documentos</option>
+        <option value="0">Descargas</option>
+        <option value="3">Temporal</option>
+    </select>
+
+    <br/>
+    <button type="submit" class="btn btn-info">Subir</button>
+
+
+    </div>
+
+
+</form>
+
+<br/>
+
+<h2>
+    @ViewBag.Mensaje
+</h2>

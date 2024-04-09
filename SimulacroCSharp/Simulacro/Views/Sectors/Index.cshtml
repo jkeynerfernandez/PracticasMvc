@@ -1,0 +1,27 @@
+<table>
+    <thead>
+        <tr>
+            <th>SECTOR </th>
+            <th>AUTHOR</th>
+            
+        </tr>
+    </thead>
+
+    @foreach(var sector in Model ){
+
+         <tr>
+            <td>@sector.Name</td>
+            
+            <td>@sector.Author</td>
+            <td>
+                <a asp-area="" asp-controller="Sectors" asp-action="Details" asp-route-id="@sector.Id"><button>Details</button></a>
+                <a asp-area="" asp-controller="Sectors" asp-action="Edit" asp-route-id="@sector.Id"><button>Update</button></a>
+                <a asp-area="" asp-controller="Sectors" asp-action="Delete" asp-route-id="@sector.Id"><button>Delete</button></a>
+
+
+            </td>
+        </tr>
+
+    }
+
+</table>

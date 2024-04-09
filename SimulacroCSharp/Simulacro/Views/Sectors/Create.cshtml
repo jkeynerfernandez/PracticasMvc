@@ -1,0 +1,40 @@
+
+@model Sector
+@{
+    ViewData["Title"]= "create";
+}
+
+<form asp-action="CreateSector" method="post">
+
+    <div>
+        <label for="Name">Name</label>
+        <input  asp-for="Name" name="Name">
+    </div>
+
+
+   
+    <div>
+        <label for="Description">Description</label>
+        <input  asp-for="Description" name="Description">
+    </div>
+
+     <div>
+        <label for="Author">Author</label>
+        <input  asp-for="Author" name="Author">
+    </div>
+
+  
+
+   
+
+
+   
+
+
+    <button type="submit">Crear</button>
+
+</form>
+
+
+
+

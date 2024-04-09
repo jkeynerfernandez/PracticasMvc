@@ -1,0 +1,29 @@
+@model List<PracticaCuatro.Models.User>
+
+<table class="table table-striped">
+    <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Names</th>
+            <th>LAST NAMES</th>
+            <th>Email</th>
+            <th>BIRTH DATE</th>
+            <th>ADDRESS</th>
+            <th>PHONE</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Names</td>
+                <td>@user.LastNames</td>
+                <td>@user.Email</td>
+                <td>@user.BirthDate</td>
+                <td>@user.Address</td>
+                <td>@user.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>

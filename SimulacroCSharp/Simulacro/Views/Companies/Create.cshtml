@@ -1,0 +1,72 @@
+
+@model Companie
+@{
+    ViewData["Title"]= "create";
+}
+
+<form asp-action="CreateCompanie" method="post" enctype="multipart/form-data">
+
+    <div>
+        <label for="Name">Name</label>
+        <input  asp-for="Name" name="Name">
+    </div>
+
+    <div>
+        <label for="Nit">Nit</label>
+        <input  asp-for="Nit" name="Nit">
+    </div>
+
+    <div>
+        <label for="Address">Address</label>
+        <input  asp-for="Address" name="Address">
+    </div>
+    <div>
+        <label for="Description">Description</label>
+        <input  asp-for="Description" name="Description">
+    </div>
+
+    <div>
+        <label for="Logo">Logo</label>
+        <input  asp-for="Logo" name="Logo">
+    </div>
+
+    <div>
+        <label for="Phone">Phone</label>
+        <input  asp-for="Phone" name="Phone">
+    </div>
+
+    <div>
+        <label for="LegalRepresentative">LegalRepresentative</label>
+        <input  asp-for="LegalRepresentative" name="LegalRepresentative">
+    </div>
+
+   
+
+    <div>
+        <label for="SectorId">SectorId</label>
+        <input  asp-for="SectorId" name="SectorId">
+    </div>
+
+    <div class="row">
+        <div class="col.md-6">
+          
+            <label for="ejemplo">Carpeta donde ubicarlo</label>
+            <select name="ubicacion">
+                <option value="1">Imágenes</option>
+                <option value="2">Documentos</option>
+                <option value="0">Descargas</option>
+                <option value="3">Temporal</option>
+            </select>
+        </div> 
+
+          <label asp-for="Logo">Escoja el archivo</label>
+            <input type="file" class="form-control-file" name="archivo" >   
+    </div>
+
+    <button type="submit">Crear</button>
+
+</form>
+
+
+
+

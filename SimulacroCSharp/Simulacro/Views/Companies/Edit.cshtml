@@ -1,0 +1,57 @@
+
+@model Companie
+
+
+<form asp-action="EditCompanie" asp-controller="Companies" asp-route-id="@Model.Id" method="post">
+
+    <div>
+        
+        <input  asp-for="Id" name="Id" hidden>
+    </div>
+
+    <div>
+        <label for="Name">Name</label>
+        <input  asp-for="Name" name="Name">
+    </div>
+
+    <div>
+        <label for="Nit">Nit</label>
+        <input  asp-for="Nit" name="Nit">
+    </div>
+
+    <div>
+        <label for="Address">Address</label>
+        <input  asp-for="Address" name="Address">
+    </div>
+    <div>
+        <label for="Description">Description</label>
+        <input  asp-for="Description" name="Description">
+    </div>
+
+    <div>
+        <label for="Logo">Logo</label>
+        <input  asp-for="Logo" name="Logo">
+    </div>
+
+    <div>
+        <label for="Phone">Phone</label>
+        <input  asp-for="Phone" name="Phone">
+    </div>
+
+    <div>
+        <label for="LegalRepresentative">LegalRepresentative</label>
+        <input  asp-for="LegalRepresentative" name="LegalRepresentative">
+    </div>
+
+   
+
+    <div>
+        <label for="SectorId">SectorId</label>
+        <input  asp-for="SectorId" name="SectorId">
+    </div>
+
+    <button type="submit">update</button>
+
+</form>
+
+
