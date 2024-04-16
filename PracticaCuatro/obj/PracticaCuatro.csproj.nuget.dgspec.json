@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\riwi\\csharp\\PracticasMvc\\PracticaCuatro\\PracticaCuatro.csproj": {}
+    "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj": {}
   },
   "projects": {
-    "D:\\riwi\\csharp\\PracticasMvc\\PracticaCuatro\\PracticaCuatro.csproj": {
+    "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\riwi\\csharp\\PracticasMvc\\PracticaCuatro\\PracticaCuatro.csproj",
+        "projectUniqueName": "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj",
         "projectName": "PracticaCuatro",
-        "projectPath": "D:\\riwi\\csharp\\PracticasMvc\\PracticaCuatro\\PracticaCuatro.csproj",
-        "packagesPath": "C:\\Users\\Juan Keyner\\.nuget\\packages\\",
-        "outputPath": "D:\\riwi\\csharp\\PracticasMvc\\PracticaCuatro\\obj\\",
+        "projectPath": "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj",
+        "packagesPath": "/home/riwip5-043/.nuget/packages/",
+        "outputPath": "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Juan Keyner\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/riwip5-043/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

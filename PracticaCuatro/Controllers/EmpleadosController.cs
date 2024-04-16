@@ -6,30 +6,30 @@ using PracticaCuatro.Models;
 
 
 namespace PracticaCuatro.Controllers{
-    public class UsersController: Controller{
+    public class EmpleadosController: Controller{
 
 
         public readonly FotoContext _context;
 
-        public UsersController(FotoContext context){
+        public EmpleadosController(FotoContext context){
             _context = context;
         }
 
         public async Task<IActionResult> Index(){
-          return View(await _context.Users.ToListAsync());
+          return View(await _context.Empleados.ToListAsync());
 
         }
 
         public async Task<IActionResult> Details(int? id){
-            return View(await _context.Users.FirstOrDefaultAsync(m => m.Id==id));
+            return View(await _context.Empleados.FirstOrDefaultAsync(m => m.Id==id));
         }
 
           public async Task<IActionResult> DetailsFind(List<int> id){
-           var users = await _context.Users.Where(u => id.Contains(u.Id)).ToListAsync();
+           var Empleados = await _context.Empleados.Where(u => id.Contains(u.Id)).ToListAsync();
 
-    if (users != null && users.Any())
+    if (Empleados != null && Empleados.Any())
     {
-        return View(users);
+        return View(Empleados);
     }
     else
     {
@@ -38,8 +38,8 @@ namespace PracticaCuatro.Controllers{
         }
 
         public async Task<IActionResult> Delete(int? id){
-            var user = await _context.Users.FindAsync(id);
-            _context.Users.Remove(user);
+            var empleado = await _context.Empleados.FindAsync(id);
+            _context.Empleados.Remove(empleado);
             await _context.SaveChangesAsync();
             
             return RedirectToAction("Index");
@@ -54,37 +54,37 @@ namespace PracticaCuatro.Controllers{
         }
 
         [HttpPost]
-        public IActionResult Create(User u){
+        public IActionResult Create(Empleado u){
 
 
-            _context.Users.Add(u);
+            _context.Empleados.Add(u);
             _context.SaveChanges();
 
             return RedirectToAction("Index");
         }
         [HttpGet]
         public async Task<IActionResult> Edit(int? id){
-            return View(await _context.Users.FirstOrDefaultAsync(m=> m.Id == id));
+            return View(await _context.Empleados.FirstOrDefaultAsync(m=> m.Id == id));
         }
 
 
         [HttpPost]
-        public  IActionResult EditUser(int? id, User u){
-             _context.Users.Update(u);
+        public  IActionResult EditEmpleado(int? id, Empleado u){
+             _context.Empleados.Update(u);
              _context.SaveChanges();
              return RedirectToAction("Index");
         }
 
         [HttpGet]
         public async Task<IActionResult> Search(string Names){
-            var user = await _context.Users.Where(u => u.Names.Contains(Names)).ToListAsync();
+            var empleado = await _context.Empleados.Where(u => u.Nombres.Contains(Names)).ToListAsync();
            
            
            
-            if (user != null && user.Any())
+            if (empleado != null && empleado.Any())
     {
     
-        return RedirectToAction("DetailsFind", new { id = user.First().Id });
+        return RedirectToAction("DetailsFind", new { id = empleado.First().Id });
     }
     else
     {

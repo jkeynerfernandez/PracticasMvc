@@ -10,7 +10,7 @@ namespace PracticaCuatro.Data{
 
         }
 
-        public DbSet<User> Users {get; set;}
+        public DbSet<Empleado> Empleados {get; set;}
 
 
     }
