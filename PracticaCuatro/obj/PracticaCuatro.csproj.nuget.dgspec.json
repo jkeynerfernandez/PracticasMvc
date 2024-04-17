@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj": {}
+    "/home/riwip5-003/Documents/Keyner/Practicas/PracticaCuatro/PracticaCuatro.csproj": {}
   },
   "projects": {
-    "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj": {
+    "/home/riwip5-003/Documents/Keyner/Practicas/PracticaCuatro/PracticaCuatro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj",
+        "projectUniqueName": "/home/riwip5-003/Documents/Keyner/Practicas/PracticaCuatro/PracticaCuatro.csproj",
         "projectName": "PracticaCuatro",
-        "projectPath": "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/PracticaCuatro.csproj",
-        "packagesPath": "/home/riwip5-043/.nuget/packages/",
-        "outputPath": "/home/riwip5-043/Documents/keyner/PracticasMvc/PracticaCuatro/obj/",
+        "projectPath": "/home/riwip5-003/Documents/Keyner/Practicas/PracticaCuatro/PracticaCuatro.csproj",
+        "packagesPath": "/home/riwip5-003/.nuget/packages/",
+        "outputPath": "/home/riwip5-003/Documents/Keyner/Practicas/PracticaCuatro/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip5-043/.nuget/NuGet/NuGet.Config"
+          "/home/riwip5-003/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -45,6 +45,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [

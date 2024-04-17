@@ -1,9 +1,13 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PracticaCuatro.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace PracticaCuatro.Controllers;
 
+[Authorize]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -16,6 +20,11 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         return View();
+    }
+    public async Task<IActionResult> Salir()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        return RedirectToAction("Login", "Cuenta");
     }
 
     public IActionResult Privacy()

@@ -18,7 +18,7 @@ builder.Services.AddDbContext<FotoContext>(options =>
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
 {
-    option.LoginPath = "/Cuenta/Loguin";
+    option.LoginPath = "/Cuenta/Login";
 });
 
 var app = builder.Build();

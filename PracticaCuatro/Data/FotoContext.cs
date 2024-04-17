@@ -5,13 +5,14 @@ namespace PracticaCuatro.Data{
 
     public class FotoContext : DbContext{
 
-        public FotoContext(DbContextOptions<FotoContext> options) : base(options){
 
+        public string Conexion { get; }
 
+        public FotoContext(string valor)
+        {
+            Conexion = valor;
         }
-
-        public DbSet<Empleado> Empleados {get; set;}
-
+        
 
     }
 
